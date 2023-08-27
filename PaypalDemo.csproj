@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>9cb76685-8e8e-4669-81b3-ee783e7fdf9a</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="PayPal" />
+    <None Remove="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Polly" Version="7.2.4" />
+  </ItemGroup>
+</Project>
